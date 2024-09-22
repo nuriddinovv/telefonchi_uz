@@ -1,0 +1,50 @@
+.list_link {
+  cursor: pointer;
+  color: #193c8c;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.list_link:focus,
+.list_link:hover {
+  color: #faa500;
+}
+
+.list_link:focus:after,
+.list_link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.list_link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 0%;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #faa500;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, left;
+}
+.list_link a.active {
+  color: #faa500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #faa500;
+}
+.p-sidebar-header {
+  color: #faa500;
+  height: 50px;
+  padding: 0 20px;
+}
+.list_link_vertical a.active {
+  color: #faa500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #faa500;
+}
