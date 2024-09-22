@@ -7,10 +7,10 @@ import Statistic from "../../components/other/Statistic";
 export default function Home() {
   return (
     <div className="container ">
-      <div className="carousel my-1 bg-white h-80">
+      <div className="carousel my-6 bg-white h-80">
         <Carousel />
       </div>
-      <div className="bg-[#faa500] shadow-xl w-full rounded-lg flex gap-10 flex-wrap p-8 lg:p-16 my-1">
+      <div className="bg-[#faa500] shadow-xl w-full rounded-lg flex gap-10 flex-wrap p-8 lg:p-16 my-6">
         <div className=" flex-1 flex flex-col gap-7 lg:gap-14">
           <div className="">
             <p className="text-xl lg:text-3xl text-[#193c8c] md:leading-[28px] leading-[36px] lg:leading-[48px]">
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-1 ">
+      <div className="my-6 ">
         <div className="flex gap-3 ">
           <div className="flex flex-col gap-3">
             <Statistic title="Mijozlar soni" value={50000} />
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-1 bg-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg">
+      <div className="my-6 bg-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg">
         <div className="flex items-center justify-center">
           <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#faa500]">
             KICHIK TARIXIMIZ
