@@ -6,7 +6,7 @@ import Home from "./pages/homePage/Home";
 import About from "./pages/aboutPage/About";
 import Blog from "./pages/blogPage/Blog";
 import Contact from "./pages/contactPage/Contact";
-import Socials from "./pages/socialsPage/page";
+import Socials from "./pages/socialsPage/Socials";
 
 const router = createBrowserRouter([
   {
