@@ -1,8 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logoblue from "../../assets/logoBlue.svg";
 import logoyellow from "../../assets/logoBlack.svg";
 import "./navbar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Sidebar } from "primereact/sidebar";
 import SocialButtons from "../other/SocialButtons";
 import { IoMenu } from "react-icons/io5";
@@ -22,7 +22,11 @@ export default function Navbar() {
     { href: "contact", label: "Bog'lanish" },
   ];
   const [visible, setVisible] = useState<boolean>(false);
+  const location = useLocation();
 
+  useEffect(() => {
+    setVisible(false);
+  }, [location.pathname]);
   return (
     <>
       <div className="w-full fixed top-0 shadow-xl z-10 ">
