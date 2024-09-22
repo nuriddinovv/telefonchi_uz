@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [location.pathname]);
   return (
     <>
-      <div className="w-full fixed top-0 shadow-xl z-10 ">
+      <div className="w-full fixed top-0 shadow-lg z-10 bg-white ">
         <div className="container flex items-center justify-between min-h-20">
           <div className="lg:hidden h-[30px]">
             <button
@@ -74,7 +74,7 @@ export default function Navbar() {
       </div>
       <div className="h-20  inset-0 z-0 bg-white fixed w-full"></div>
       <div className="h-20"></div>
-      <div className="card flex justify-content-center">
+      <div className="-center">
         <Sidebar
           visible={visible}
           onHide={() => setVisible(false)}
