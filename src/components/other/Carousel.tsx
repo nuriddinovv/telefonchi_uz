@@ -4,10 +4,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
-interface CarouselItem {
-  img: string;
-  alt: string;
-}
+// interface CarouselItem {
+//   img: string;
+//   alt: string;
+// }
 export default function Carousel() {
   return (
     <>
