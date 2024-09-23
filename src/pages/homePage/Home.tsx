@@ -144,7 +144,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-6 block lg:grid grid-cols-2 items-center gap-10 shadow-xl p-8 lg:p-16">
+      <div className="my-6 block lg:grid grid-cols-2 items-center rounded-lg gap-10 shadow-xl p-8 lg:p-16">
         <div className="flex gap-3 justify-center">
           <div className="flex flex-col gap-3 w-full">
             <Statistic title="Mijozlar soni" value={50000} />
@@ -164,14 +164,13 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <div className="my-6">
-        <div className="flex items-center justify-center">
+      <div className="my-6 rounded-lg  shadow-xl p-8 lg:p-16">
+        <div className="flex items-center justify-center ">
           <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
             HAMKORLARIMIZ
           </p>
         </div>
-        <div className="flex flex-wrap justify-between ">
+        <div className="flex flex-wrap justify-between gap-3">
           <div className="w-[48%] md:w-[24%] hover:shadow-md transition-all  hover:scale-110 shadow h-[100px] flex p-8 items-center justify-center">
             <img
               className="w-full"
