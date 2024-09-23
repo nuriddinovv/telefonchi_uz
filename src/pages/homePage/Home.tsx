@@ -235,7 +235,7 @@ export default function Home() {
             <img src={alifnasiya} alt="" />
           </div>
           <div className="w-[48%] md:w-[24%] hover:shadow-md transition-all  hover:scale-110 shadow h-[100px] flex p-8 items-center justify-center">
-            <img src={alifnasiya} alt="" />
+            <p className="font-bold text-center text-2xl sm:text-3xl md:text-5xl">POCO</p>
           </div>
         </div>
       </div>
