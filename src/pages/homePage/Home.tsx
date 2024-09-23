@@ -81,29 +81,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-6 block lg:grid grid-cols-2 items-center gap-10">
-        <div className="flex gap-3 justify-center">
-          <div className="flex flex-col gap-3 w-full">
-            <Statistic title="Mijozlar soni" value={50000} />
-            <Statistic title="Oylik smartfonlar sotuvi" value={1000} />
-          </div>
-          <div className="flex flex-col gap-3 w-full">
-            <Statistic title="Xodimlar soni" value={50} />
-            <Statistic title="Ochilgan tarmoqlar soni" value={20} />
-          </div>
-        </div>
-        <div className="flex-1 h-full">
-          <img
-            style={{ borderEndEndRadius: "100px" }}
-            src={photo1}
-            alt="market"
-            className="flex-1 border-[#193c8c] hidden lg:block border-[10px] object-cover  h-full"
-          />
-        </div>
-      </div>
       <div className="my-6 text-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg">
         <div className="flex items-center justify-center">
-          <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c]">
+          <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
             KICHIK TARIXIMIZ
           </p>
         </div>
@@ -156,13 +136,40 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[50%] hidden lg:flex items-center justify-center p-2">
-            <img src={photo1} alt="img" className="border-[10px] border-[#193c8c]" />
+            <img
+              src={photo1}
+              alt="img"
+              className="border-[10px] border-[#193c8c]"
+            />
           </div>
         </div>
       </div>
+      <div className="my-6 block lg:grid grid-cols-2 items-center gap-10 shadow-xl p-8 lg:p-16">
+        <div className="flex gap-3 justify-center">
+          <div className="flex flex-col gap-3 w-full">
+            <Statistic title="Mijozlar soni" value={50000} />
+            <Statistic title="Oylik smartfonlar sotuvi" value={1000} />
+          </div>
+          <div className="flex flex-col gap-3 w-full">
+            <Statistic title="Xodimlar soni" value={50} />
+            <Statistic title="Ochilgan tarmoqlar soni" value={20} />
+          </div>
+        </div>
+        <div className="flex-1 h-full">
+          <img
+            style={{ borderEndEndRadius: "100px" }}
+            src={photo1}
+            alt="market"
+            className="flex-1 border-[#193c8c] hidden lg:block border-[10px] object-cover  h-full"
+          />
+        </div>
+      </div>
+
       <div className="my-6">
-        <div className="">
-          <p>Hamkorlarimiz</p>
+        <div className="flex items-center justify-center">
+          <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
+            HAMKORLARIMIZ
+          </p>
         </div>
         <div className="flex flex-wrap justify-between ">
           <div className="w-[48%] md:w-[24%] hover:shadow-md transition-all  hover:scale-110 shadow h-[100px] flex p-8 items-center justify-center">
