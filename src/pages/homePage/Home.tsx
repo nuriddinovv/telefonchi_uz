@@ -15,6 +15,7 @@ import oppo from "../../assets/oppo.svg";
 import samsung from "../../assets/samsung.svg";
 import vivo from "../../assets/vivo.png";
 import "./home.css";
+import GallerySection from "../../components/other/Gallery";
 export default function Home() {
   return (
     <div className="container ">
@@ -166,7 +167,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="my-6 rounded-lg  shadow-xl p-8 lg:p-16">
+      <div className="my-6 rounded-lg shadow-xl p-8 lg:p-16">
         <div className="flex items-center justify-center ">
           <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
             HAMKORLARIMIZ
@@ -251,6 +252,16 @@ export default function Home() {
               POCO
             </p>
           </div>
+        </div>
+      </div>
+      <div className="my-6 rounded-lg shadow-xl p-8 lg:p-16">
+        <div className="flex items-center justify-center ">
+          <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
+            Galereya
+          </p>
+        </div>
+        <div className="">
+          <GallerySection />
         </div>
       </div>
     </div>
