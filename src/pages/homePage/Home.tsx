@@ -101,58 +101,62 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="my-6 bg-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg">
+      <div className="my-6 text-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg">
         <div className="flex items-center justify-center">
-          <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#faa500]">
+          <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c]">
             KICHIK TARIXIMIZ
           </p>
         </div>
         <div className="flex">
-          <div className="border-[5px] rounded w-2 lg:h-[60vh] h-[65vh] border-[#Faa500] relative">
-            <span className="absolute border-[10px] rounded-full top-2 left-[-10px]"></span>
-            <span className="absolute border-[10px] rounded-full top-28 left-[-10px]"></span>
-            <span className="absolute border-[10px] rounded-full bottom-32 left-[-10px]"></span>
-            <span className="absolute border-[10px] rounded-full bottom-2 left-[-10px]"></span>
+          <div className="border-[5px] rounded w-2 lg:h-[60vh] h-[65vh] border-[#193c8c] relative">
+            <span className="absolute border-[10px] border-[#faa500] rounded-full top-2 left-[-10px]"></span>
+            <span className="absolute border-[10px] border-[#faa500] rounded-full top-28 left-[-10px]"></span>
+            <span className="absolute border-[10px] border-[#faa500] rounded-full bottom-32 left-[-10px]"></span>
+            <span className="absolute border-[10px] border-[#faa500] rounded-full bottom-2 left-[-10px]"></span>
           </div>
-          <div className="text-[#faa500] lg:text-2xl text-xl pl-3 flex flex-col justify-between gap-1 w-full lg:w-[50%]">
+          <div className=" lg:text-2xl text-xl pl-3 flex flex-col justify-between gap-1 w-full lg:w-[50%] text-[#193c8c]">
             <p>
-              <span className="p-1 bg-[#faa500] text-[#fff] font-bold rounded">
+              <span className="p-1 bg-[#193c8c] text-[#fff] font-bold rounded">
                 2021
               </span>
               <br />
-              <span className="font-semibold text-white">Telefonchi.uz</span>`ga
-              asos solindi.
+              <span className="font-semibold text-[#faa500]">
+                Telefonchi.uz
+              </span>
+              `ga asos solindi.
             </p>
             <p>
-              <span className="p-1 bg-[#faa500] text-[#fff] font-bold rounded">
+              <span className="p-1 bg-[#193c8c] text-[#fff] font-bold rounded">
                 2022
               </span>
               <br />
               Savdo nuqtalari soni 10 ga yetdi.
             </p>
             <p>
-              <span className="p-1 bg-[#faa500] text-[#fff] font-bold rounded">
+              <span className="p-1 bg-[#193c8c] text-[#fff] font-bold rounded">
                 2023
               </span>
               <br />9 ta viloyatda
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-[#faa500]">
                 Telefonchi.uz
               </span>{" "}
               do'konlari faoliyat yurita boshadi va savdo nuqtalari soni 20 taga
               yetdi.
             </p>
             <p>
-              <span className="p-1 bg-[#faa500] text-[#fff] font-bold rounded">
+              <span className="p-1 bg-[#193c8c] text-[#fff] font-bold rounded">
                 2024
               </span>
               <br />
               Toshkent shahrida ilk katta
-              <span className="font-semibold text-white">Showroom</span>{" "}
+              <span className="font-semibold text-[#faa500]">
+                Showroom
+              </span>{" "}
               ochildi.
             </p>
           </div>
           <div className="w-[50%] hidden lg:flex items-center justify-center p-2">
-            <img src={photo1} alt="img" className="border-[10px]" />
+            <img src={photo1} alt="img" className="border-[10px] border-[#193c8c]" />
           </div>
         </div>
       </div>
@@ -235,7 +239,9 @@ export default function Home() {
             <img src={alifnasiya} alt="" />
           </div>
           <div className="w-[48%] md:w-[24%] hover:shadow-md transition-all  hover:scale-110 shadow h-[100px] flex p-8 items-center justify-center">
-            <p className="font-bold text-center text-2xl sm:text-3xl md:text-5xl">POCO</p>
+            <p className="font-bold text-center text-2xl sm:text-3xl md:text-5xl">
+              POCO
+            </p>
           </div>
         </div>
       </div>
