@@ -173,7 +173,7 @@ export default function Home() {
             HAMKORLARIMIZ
           </p>
         </div>
-        <div className="flex flex-wrap justify-between gap-4">
+        <div className="flex flex-wrap justify-between lg:gap-4 ">
           <div className="w-[48%] md:w-[24%] hover:shadow-md transition-all  hover:scale-110 shadow h-[100px] flex p-8 items-center justify-center">
             <img
               className="w-full"
