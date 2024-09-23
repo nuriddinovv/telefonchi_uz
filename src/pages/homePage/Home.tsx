@@ -3,6 +3,8 @@ import photo1 from "../../assets/1.jpg";
 import photo5 from "../../assets/5.jpg";
 import photo11 from "../../assets/11.jpg";
 import photo8 from "../../assets/8.jpg";
+import photo9 from "../../assets/9.jpg";
+import photo6 from "../../assets/6.jpg";
 import Statistic from "../../components/other/Statistic";
 import alifnasiya from "../../assets/alifnasiya.svg";
 import uzumnasiya from "../../assets/uzumnasiya.svg";
@@ -137,7 +139,7 @@ export default function Home() {
           </div>
           <div className="w-[50%] hidden lg:flex items-center justify-center p-2">
             <img
-              src={photo1}
+              src={photo9}
               alt="img"
               className="border-[10px] border-[#193c8c]"
             />
@@ -158,7 +160,7 @@ export default function Home() {
         <div className="flex-1 h-full">
           <img
             style={{ borderEndEndRadius: "100px" }}
-            src={photo1}
+            src={photo6}
             alt="market"
             className="flex-1 border-[#193c8c] hidden lg:block border-[10px] object-cover  h-full"
           />
