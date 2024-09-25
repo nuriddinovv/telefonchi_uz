@@ -9,14 +9,8 @@ import { IoMenu } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 
-interface NavItem {
-  href: string;
-  label: string;
-  navIcon?: any;
-}
-
 export default function Navbar() {
-  const navData: NavItem[] = [
+  const navData = [
     { href: "/", label: "Bosh sahifa" },
     { href: "about", label: "Biz haqimizda" },
     {
@@ -27,7 +21,7 @@ export default function Navbar() {
     { href: "socials", label: "Ijtimoiy tarmoqlarimiz" },
     { href: "contact", label: "Bog'lanish" },
   ];
-  const [visible, setVisible] = useState<boolean>(false);
+  const [visible, setVisible] = useState < boolean > false;
   const location = useLocation();
 
   useEffect(() => {
