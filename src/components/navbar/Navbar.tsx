@@ -7,17 +7,23 @@ import { Sidebar } from "primereact/sidebar";
 import SocialButtons from "../other/SocialButtons";
 import { IoMenu } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
+import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 
 interface NavItem {
   href: string;
   label: string;
+  navIcon?: any;
 }
 
 export default function Navbar() {
   const navData: NavItem[] = [
     { href: "/", label: "Bosh sahifa" },
     { href: "about", label: "Biz haqimizda" },
-    { href: "blog", label: "Blog" },
+    {
+      href: "market",
+      label: "Market",
+      navIcon: <MdOutlineShoppingCartCheckout />,
+    },
     { href: "socials", label: "Ijtimoiy tarmoqlarimiz" },
     { href: "contact", label: "Bog'lanish" },
   ];
@@ -60,12 +66,19 @@ export default function Navbar() {
           </div>
           <div className="lg:block hidden">
             <ul className="flex items-center gap-5 list">
-              {navData.map(({ href, label }, index) => (
+              {navData.map(({ href, label, navIcon }, index) => (
                 <li
                   key={index}
                   className="hover:text-[#faa500] transition duration-300 cursor-pointer font-[600] list_link"
                 >
-                  <NavLink to={href}>{label}</NavLink>
+                  <NavLink to={href} className="flex items-center gap-2">
+                    {label}{" "}
+                    {navIcon ? (
+                      <span className="text-[16px]">{navIcon}</span>
+                    ) : (
+                      ""
+                    )}
+                  </NavLink>
                 </li>
               ))}
             </ul>

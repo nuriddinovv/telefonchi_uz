@@ -16,13 +16,21 @@ import samsung from "../../assets/samsung.svg";
 import vivo from "../../assets/vivo.png";
 import "./home.css";
 import GallerySection from "../../components/other/Gallery";
+import { useEffect } from "react";
+import AOS from "aos";
 export default function Home() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div className="container ">
-      <div className="carousel my-6 bg-white h-80">
+      <div className="carousel my-6 bg-white h-80" data-aos="fade-up">
         <Carousel />
       </div>
-      <div className="bg-[#faa500] shadow-xl w-full rounded-lg flex gap-10 flex-wrap p-8 lg:p-16 my-6">
+      <div
+        data-aos="fade-right"
+        className="bg-[#faa500] shadow-xl w-full rounded-lg flex gap-10 flex-wrap p-8 lg:p-16 my-6"
+      >
         <div className=" flex-1 flex flex-col gap-7 lg:gap-14">
           <div className="">
             <p className="text-xl lg:text-3xl text-[#193c8c] md:leading-[28px] leading-[36px] lg:leading-[48px]">
@@ -84,7 +92,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-6 text-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg">
+      <div
+        data-aos="fade-left"
+        className="my-6 text-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg"
+      >
         <div className="flex items-center justify-center">
           <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
             KICHIK TARIXIMIZ
@@ -147,7 +158,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-6 block lg:grid grid-cols-2 items-center rounded-lg gap-10 shadow-xl p-8 lg:p-16">
+      <div
+        data-aos="fade-up"
+        className="my-6 block lg:grid grid-cols-2 items-center rounded-lg gap-10 shadow-xl p-8 lg:p-16"
+      >
         <div className="flex gap-3 justify-center">
           <div className="flex flex-col gap-3 w-full">
             <Statistic title="Mijozlar soni" value={50000} />
@@ -167,7 +181,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="my-6 rounded-lg shadow-xl p-8 lg:p-16">
+      <div data-aos="zoom-in" className="my-6 rounded-lg shadow-xl p-8 lg:p-16">
         <div className="flex items-center justify-center ">
           <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
             HAMKORLARIMIZ

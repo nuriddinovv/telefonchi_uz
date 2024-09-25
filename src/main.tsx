@@ -4,10 +4,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/homePage/Home";
 import About from "./pages/aboutPage/About";
-import Blog from "./pages/blogPage/Blog";
 import Contact from "./pages/contactPage/Contact";
 import Socials from "./pages/socialsPage/Socials";
-
+import Market from "./pages/marketPage/Market";
+import "aos/dist/aos.css";
 const router = createBrowserRouter([
   {
     path: "",
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "blog",
-        element: <Blog />,
+        path: "market",
+        element: <Market />,
       },
       {
         path: "contact",
