@@ -21,7 +21,7 @@ export default function Navbar() {
     { href: "socials", label: "Ijtimoiy tarmoqlarimiz" },
     { href: "contact", label: "Bog'lanish" },
   ];
-  const [visible, setVisible] = useState < boolean > false;
+  const [visible, setVisible] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
