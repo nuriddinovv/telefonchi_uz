@@ -131,7 +131,7 @@ const LocationsList = () => {
 
       distances.sort((a, b) => a.distance - b.distance);
       setNearestLocation(distances[0]);
-      setOtherLocations(distances.slice(1)); // Qolgan manzillar
+      setOtherLocations(distances.slice(1));
     }
   }, [userLocation]);
 
@@ -139,7 +139,7 @@ const LocationsList = () => {
     <div className="container">
       {nearestLocation && (
         <div className="py-10 mx-auto flex sm:flex-nowrap flex-col flex-wrap">
-          <p className="text-3xl font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
+          <p className="text-lg md:text-3xl mb-10 font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
             SIZGA ENG YAQIN MANZILIMIZ
           </p>
 
@@ -185,7 +185,7 @@ const LocationsList = () => {
         </div>
       )}
       <div className="mt-5">
-        <p className="text-3xl font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
+        <p className="text-lg md:text-3xl mb-10 font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
           BARCHA MANZILLARIMIZ
         </p>
         {otherLocations.map((location, i) => (
