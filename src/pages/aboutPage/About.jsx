@@ -5,6 +5,10 @@ import teamMember1 from "../../assets/teamMember1.png";
 import teamMember2 from "../../assets/teamMember2.png";
 import teamMember3 from "../../assets/teamMember3.png";
 import teamMember4 from "../../assets/teamMember4.png";
+import photo1 from "../../assets/1.jpg";
+import photo5 from "../../assets/5.jpg";
+import photo11 from "../../assets/11.jpg";
+import photo8 from "../../assets/8.jpg";
 import phoneImage from "../../assets/1.jpg";
 import map from "../../assets/mapUz.png";
 import CountUp from "react-countup";
@@ -25,13 +29,77 @@ export default function About() {
         <h1 className="text-3xl lg:text-4xl font-bold text-[#193c8c]">
           Biz haqimizda
         </h1>
-        <p className="text-xl lg:text-2xl text-[#faa500] mt-4">
-          TELEFONCHI.UZ - Smartfonlar savdosiga ixtisoslashgan do‘konlar
-          tarmog‘i
-        </p>
       </div>
 
       {/* Ma'lumot qismi */}
+      <div className="">
+        <div
+          data-aos="zoom-out-up"
+          data-aos-duration="800"
+          className="bg-[#faa500] shadow-xl w-full rounded-lg flex gap-10 flex-wrap p-8 lg:p-16 my-6"
+        >
+          <div className=" flex-1 flex flex-col gap-7 lg:gap-14">
+            <div className="" data-aos="fade-up" data-aos-duration="2000">
+              <p className="text-xl lg:text-3xl text-[#193c8c] md:leading-[28px] leading-[36px] lg:leading-[48px]">
+                <span className="bg-[#193c8c] p-2 rounded text-white font-extrabold">
+                  TELEFONCHI.UZ
+                </span>{" "}
+                — bu smartfonlar savdosiga ixtisoslashgan do'konlar tarmog'i.
+              </p>
+            </div>
+            <div className="flex justify-between flex-col items-center gap-7 overflow-hidden">
+              <div className="flex-1  ">
+                <img
+                  loading="lazy"
+                  style={{ borderStartStartRadius: "100px" }}
+                  src={photo1}
+                  alt="market"
+                  className="flex-1 lg:min-w-[451px] border-white border-[10px] object-cover h-[300px]"
+                />
+              </div>
+              <div className="flex-1  ">
+                <img
+                  loading="lazy"
+                  style={{ borderEndEndRadius: "100px" }}
+                  src={photo5}
+                  alt="market"
+                  className="flex-1 lg:min-w-[451px] border-white border-[10px] object-cover  h-[300px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div className=" flex-1 flex flex-col-reverse lg:flex-col gap-7 lg:gap-14">
+            <div className="flex justify-between flex-col items-center gap-7 overflow-hidden">
+              <div className="flex-1  ">
+                <img
+                  loading="lazy"
+                  style={{ borderStartStartRadius: "100px" }}
+                  src={photo8}
+                  alt="market"
+                  className="flex-1 lg:min-w-[451px] border-white border-[10px] object-cover h-[300px]"
+                />
+              </div>
+              <div className="flex-1  ">
+                <img
+                  loading="lazy"
+                  style={{ borderEndEndRadius: "100px" }}
+                  src={photo11}
+                  alt="market"
+                  className="flex-1 lg:min-w-[451px] border-white border-[10px] object-cover  h-[300px]"
+                />
+              </div>
+            </div>
+            <div className="" data-aos="fade-down" data-aos-duration="2000">
+              <p className="text-xl lg:text-3xl text-[#193c8c] md:leading-[28px] leading-[36px] lg:leading-[48px]">
+                <span className="bg-[#193c8c] p-2 rounded text-white font-extrabold">
+                  TELEFONCHI.UZ
+                </span>{" "}
+                — da xohlagan turdagi smartfonlarni topa olasiz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <div className="my-8 grid lg:grid-cols-2 gap-10 items-center">
         <div className="text-lg lg:text-xl" data-aos="fade-right">
           <p>
