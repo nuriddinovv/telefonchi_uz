@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { InputMask } from "primereact/inputmask";
 const locations = [
   {
     address: "Toshkent shahri, Shayxontohur tumani, Xadra dahasi 7",
@@ -135,7 +135,142 @@ const Contact = () => {
 
   return (
     <div className="container">
-      <div className=""></div>
+      <div
+        style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+        className="border py-10 rounded mt-6"
+      >
+        <div className="container mx-auto ">
+          <div className="flex flex-wrap">
+            <div className="h-full w-full max-h-[450px] overflow-hidden lg:w-fit">
+              <div className="shadow-lg">
+                <img
+                  src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/2.jpg"
+                  className="h-full w-auto rounded"
+                  alt="Contact"
+                />
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2">
+              <div className="p-6">
+                <h1 className="text-4xl font-light mt-2 text-center">
+                  Tezkor aloqa
+                </h1>
+                <form className="mt-4">
+                  <div className="space-y-4">
+                    <div>
+                      <input
+                        className="w-full p-3 border border-gray-300 rounded"
+                        type="text"
+                        placeholder="Ismingiz..."
+                      />
+                    </div>
+
+                    <div>
+                      <InputMask
+                        className="w-full p-3 border border-gray-300 rounded"
+                        mask="99-999-9999"
+                        placeholder="99-XXX-XXXX"
+                      />
+                    </div>
+                    <div>
+                      <textarea
+                        className="w-full p-3 border border-gray-300 rounded"
+                        rows="3"
+                        placeholder="Xabar qoldiring..."
+                      ></textarea>
+                    </div>
+                    <div>
+                      <button
+                        type="submit"
+                        className="bg-gradient-to-r from-[#193c8c] to-[#0f2d75] mt-3 text-white px-6 py-2 rounded border-0"
+                      >
+                        Jo'natish
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="mt-10">
+              <div className="flex flex-wrap -mx-4">
+                <div className="w-full md:w-1/3 px-4 mb-8">
+                  <Link
+                    to={
+                      "https://www.google.com/maps/@41.3260223,69.2464008,20z?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+                    }
+                    target="_blank"
+                    className="flex items-center transition-all"
+                  >
+                    <img
+                      src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon1.png"
+                      alt="Address Icon"
+                      className="mr-4 "
+                    />
+                    <div>
+                      <h6 className="text-xl  font-bold text-[#193c8c]">
+                        Bosh ofis
+                      </h6>
+                      <p className="hover:text-[#faa500] duration-300">
+                        Shayhontohur tumani
+                        <br /> Xadra dahasi 7
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-8">
+                  <div className="flex items-center cursor-pointer">
+                    <img
+                      src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png"
+                      alt="Phone Icon"
+                      className="mr-4"
+                    />
+                    <div>
+                      <h6 className="text-xl  font-bold text-[#193c8c]">
+                        Telefon raqam
+                      </h6>
+                      <Link
+                        to={"tel:+998887025523"}
+                        className="hover:text-[#faa500] duration-300"
+                      >
+                        +998-88-702-5523
+                      </Link>
+                      <br />
+                      <Link
+                        to={"tel:+998887025536"}
+                        className="hover:text-[#faa500] duration-300"
+                      >
+                        +998-88-702-5536
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-8">
+                  <div className="flex items-center">
+                    <img
+                      src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png"
+                      alt="Email Icon"
+                      className="mr-4"
+                    />
+                    <div>
+                      <h6 className="text-xl  font-bold text-[#193c8c]">
+                        Email
+                      </h6>
+                      <Link
+                        to={"mailto:info@telefonchi.uz"}
+                        className="hover:text-[#faa500] duration-300"
+                      >
+                        info@telefonchi.uz
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {nearestLocation && (
         <div className="py-10 mx-auto flex sm:flex-nowrap flex-col flex-wrap">
           <p className="text-lg md:text-3xl mb-10 font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
