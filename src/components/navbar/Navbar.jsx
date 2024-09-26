@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full fixed top-0 shadow-lg z-10 bg-white ">
-        <div className="container flex items-center justify-between min-h-20">
+        <div className="container flex items-center justify-between min-h-20 px-6">
           <div className="lg:hidden h-[30px]">
             <button
               onClick={() => {

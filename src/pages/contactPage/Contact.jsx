@@ -144,11 +144,11 @@ const Contact = () => {
       >
         <div className="container mx-auto " data-aos="fade-in">
           <div className="flex flex-wrap">
-            <div className="h-full w-full max-h-[450px] overflow-hidden lg:w-fit">
+            <div className="h-full overflow-hidden mx-auto lg:w-1/2">
               <div className="shadow-lg">
                 <img
                   src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/2.jpg"
-                  className="h-full w-auto rounded"
+                  className="h-full w-auto rounded "
                   alt="Contact"
                 />
               </div>

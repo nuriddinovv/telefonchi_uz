@@ -20,7 +20,7 @@ export default function Market() {
         </p>
       </div>
 
-      <div className="h-[65vh] w-full flex items-center justify-center flex-col">
+      <div className="h-[75vh] w-full flex items-center justify-center flex-col">
         <img
           src={marketimg}
           className="w-full sm:h-full sm:w-fit"
