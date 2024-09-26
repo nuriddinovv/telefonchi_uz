@@ -85,7 +85,7 @@ const locations = [
 ];
 
 const getDistance = (lat1, lon1, lat2, lon2) => {
-  const R = 6371; // Yer radiusi (km)
+  const R = 6371;
   const dLat = (lat2 - lat1) * (Math.PI / 180);
   const dLon = (lon2 - lon1) * (Math.PI / 180);
   const a =
@@ -95,13 +95,12 @@ const getDistance = (lat1, lon1, lat2, lon2) => {
       Math.sin(dLon / 2) *
       Math.sin(dLon / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c; // Masofani qaytarish (km)
+  return R * c;
 };
 
-const LocationsList = () => {
+const Contact = () => {
   const [userLocation, setUserLocation] = useState(null);
   const [nearestLocation, setNearestLocation] = useState(null);
-  const [otherLocations, setOtherLocations] = useState([]);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -131,12 +130,12 @@ const LocationsList = () => {
 
       distances.sort((a, b) => a.distance - b.distance);
       setNearestLocation(distances[0]);
-      setOtherLocations(distances.slice(1));
     }
   }, [userLocation]);
 
   return (
     <div className="container">
+      <div className=""></div>
       {nearestLocation && (
         <div className="py-10 mx-auto flex sm:flex-nowrap flex-col flex-wrap">
           <p className="text-lg md:text-3xl mb-10 font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
@@ -188,7 +187,7 @@ const LocationsList = () => {
         <p className="text-lg md:text-3xl mb-10 font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
           BARCHA MANZILLARIMIZ
         </p>
-        {otherLocations.map((location, i) => (
+        {locations.map((location, i) => (
           <div key={i} className="py-3 mx-auto flex sm:flex-nowrap flex-wrap">
             <div className="w-full bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative h-[50vh] lg:h-[70vh]">
               <iframe
@@ -236,4 +235,4 @@ const LocationsList = () => {
   );
 };
 
-export default LocationsList;
+export default Contact;
