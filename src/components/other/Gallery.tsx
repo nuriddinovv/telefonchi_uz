@@ -10,7 +10,7 @@ const GallerySection = () => {
     <section className="body-font">
       <div className="my-6 mx-auto flex flex-wrap">
         <div className="flex flex-wrap flex-col md:flex-row md:-m-2 -m-1">
-          <div className="flex flex-wrap w-1/2">
+          <div className="flex flex-wrap md:w-1/2">
             <div className="md:p-2 p-1 w-1/2">
               <img
                 alt="gallery"
@@ -33,7 +33,7 @@ const GallerySection = () => {
               />
             </div>
           </div>
-          <div className="flex flex-wrap w-1/2">
+          <div className="flex flex-wrap md:w-1/2">
             <div className="md:p-2 p-1 w-full">
               <img
                 alt="gallery"

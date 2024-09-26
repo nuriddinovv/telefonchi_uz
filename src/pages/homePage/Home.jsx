@@ -94,7 +94,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        data-aos="fade-down-right"
+        data-aos="fade-up"
         className="my-6 text-[#193c8c] p-8 lg:p-16 shadow-xl w-full rounded-lg"
       >
         <div className="flex items-center justify-center">
@@ -328,7 +328,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-6 rounded-lg shadow-xl p-8 lg:p-16">
+      <div className="my-6 rounded-lg shadow-xl lg:p-16">
         <div className="flex items-center justify-center ">
           <p className="p-3 text-white text-xl lg:text-3xl rounded font-extrabold bg-[#193c8c] mb-4">
             Galereya
