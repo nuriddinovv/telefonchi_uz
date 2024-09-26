@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { InputMask } from "primereact/inputmask";
+import AOS from "aos";
+
 const locations = [
   {
     address: "Toshkent shahri, Shayxontohur tumani, Xadra dahasi 7",
@@ -114,6 +116,7 @@ const Contact = () => {
         }
       );
     }
+    AOS.init({ duration: 1000 });
   }, []);
 
   useEffect(() => {
@@ -139,7 +142,7 @@ const Contact = () => {
         style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
         className="border py-10 rounded mt-6"
       >
-        <div className="container mx-auto ">
+        <div className="container mx-auto " data-aos="fade-in">
           <div className="flex flex-wrap">
             <div className="h-full w-full max-h-[450px] overflow-hidden lg:w-fit">
               <div className="shadow-lg">
@@ -194,8 +197,12 @@ const Contact = () => {
           </div>
           <div className="w-full">
             <div className="mt-10">
-              <div className="flex flex-wrap -mx-4">
-                <div className="w-full md:w-1/3 px-4 mb-8">
+              <div className="flex flex-wrap mx-auto justify-center">
+                <div
+                  className="w-full md:w-1/3 px-4 mb-8"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
                   <Link
                     to={
                       "https://www.google.com/maps/@41.3260223,69.2464008,20z?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D"
@@ -219,7 +226,11 @@ const Contact = () => {
                     </div>
                   </Link>
                 </div>
-                <div className="w-full md:w-1/3 px-4 mb-8">
+                <div
+                  className="w-full md:w-1/3 px-4 mb-8"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <div className="flex items-center cursor-pointer">
                     <img
                       src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png"
@@ -246,7 +257,11 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-1/3 px-4 mb-8">
+                <div
+                  className="w-full md:w-1/3 px-4 mb-8"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   <div className="flex items-center">
                     <img
                       src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png"
@@ -273,11 +288,17 @@ const Contact = () => {
       </div>
       {nearestLocation && (
         <div className="py-10 mx-auto flex sm:flex-nowrap flex-col flex-wrap">
-          <p className="text-lg md:text-3xl mb-10 font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit">
+          <p
+            className="text-lg md:text-3xl mb-10 font-bold text-center m-2 p-2 bg-[#193c8c] rounded text-white mx-auto w-fit"
+            data-aos="zoom-in-right"
+          >
             SIZGA ENG YAQIN MANZILIMIZ
           </p>
 
-          <div className="w-full bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative h-[50vh] lg:h-[70vh]">
+          <div
+            className="w-full bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative h-[50vh] lg:h-[70vh]"
+            data-aos="zoom-in-up"
+          >
             <iframe
               width="100%"
               height="100%"
@@ -285,7 +306,11 @@ const Contact = () => {
               title="map"
               src={nearestLocation.locationUrl}
             ></iframe>
-            <div className="bg-white relative flex flex-col px-6 flex-wrap py-6 rounded shadow-md w-full lg:w-1/2">
+            <div
+              className="bg-white relative flex flex-col px-6 flex-wrap py-6 rounded shadow-md w-full lg:w-1/2"
+              data-aos="fade-right"
+              data-duration="2000"
+            >
               <div>
                 <h2 className="title-font text-[18px] font-semibold text-gray-900 tracking-widest">
                   Yaqin manzil:
@@ -323,7 +348,11 @@ const Contact = () => {
           BARCHA MANZILLARIMIZ
         </p>
         {locations.map((location, i) => (
-          <div key={i} className="py-3 mx-auto flex sm:flex-nowrap flex-wrap">
+          <div
+            key={i}
+            className="py-3 mx-auto flex sm:flex-nowrap flex-wrap"
+            data-aos="zoom-out-up"
+          >
             <div className="w-full bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative h-[50vh] lg:h-[70vh]">
               <iframe
                 width="100%"
@@ -332,7 +361,11 @@ const Contact = () => {
                 title="map"
                 src={location.locationUrl}
               ></iframe>
-              <div className="bg-white relative flex flex-col px-6 flex-wrap py-6 rounded shadow-md w-full lg:w-1/2">
+              <div
+                className="bg-white relative flex flex-col px-6 flex-wrap py-6 rounded shadow-md w-full lg:w-1/2"
+                data-aos="fade-right"
+                data-duration="2000"
+              >
                 <div>
                   <h2 className="title-font text-[18px] font-semibold text-gray-900 tracking-widest">
                     MANZIL
