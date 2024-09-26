@@ -7,7 +7,6 @@ import About from "./pages/aboutPage/About";
 import Contact from "./pages/contactPage/Contact";
 import Socials from "./pages/socialsPage/Socials";
 import Market from "./pages/marketPage/Market";
-import "aos/dist/aos.css";
 const router = createBrowserRouter([
   {
     path: "",
