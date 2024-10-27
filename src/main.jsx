@@ -5,7 +5,6 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/homePage/Home";
 import About from "./pages/aboutPage/About";
 import Contact from "./pages/contactPage/Contact";
-import Socials from "./pages/socialsPage/Socials";
 import Market from "./pages/marketPage/Market";
 const router = createBrowserRouter([
   {
@@ -27,10 +26,6 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
-      },
-      {
-        path: "socials",
-        element: <Socials />,
       },
     ],
   },

@@ -18,7 +18,6 @@ export default function Navbar() {
       label: "Market",
       navIcon: <MdOutlineShoppingCartCheckout />,
     },
-    { href: "socials", label: "Ijtimoiy tarmoqlarimiz" },
     { href: "contact", label: "Bog'lanish" },
   ];
   const [visible, setVisible] = useState(false);

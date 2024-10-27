@@ -24,9 +24,6 @@ export default function Home() {
   }, []);
   return (
     <div className="container ">
-      <div className="carousel my-6 bg-white h-80" data-aos="fade-up">
-        <Carousel />
-      </div>
       <div
         data-aos="zoom-out-up"
         data-aos-duration="800"
