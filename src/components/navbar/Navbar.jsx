@@ -52,7 +52,7 @@ export default function Navbar() {
           </div>
           <div className="lg:hidden h-[30px]">
             <button>
-              <Link to={"tel:998999999999"} className="text-3xl text-[#193c8c]">
+              <Link to={"tel:+998787776777"} className="text-3xl text-[#193c8c]">
                 <FaPhone />
               </Link>
             </button>
